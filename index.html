@@ -1,48 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS session</title>
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
     <style>
         * {
-            margin: 0px;
-            padding: 0px;
+            padding: 0;
+            margin: 0;
             box-sizing: border-box;
-            
+            margin: 4px;
         }
-
-        h1.background {
-            background-color: #FBB13C;
+        
+        div.parent {
+            background-color: rgba(224, 113, 68, 0.938);
+            min-height: 200px;
         }
-        h3.background {
+        
+        div.child {
+            background-color: rgba(255, 11, 174, 0.89);
+            height: 100px;
+            width: 100px;
             
-            background-color: #ffe8d6;
-            font-family: 'Courier New', Courier, monospace;
-            
+            transition-duration: 0.5s;
+            transition-delay: 0.5s;
+            transition-timing-function: ease-out;
+            border-radius: 50%;
         }
-        h2.background {
+        
+         div.child:hover {
+            background-color: cyan;
+            /* transform: translateX(180px); */
+        }
+        .child2 {
             color: black;
-            background-color: burlywood;
-        }
-
-        div.parent div {
-            background-color: lime;
+            position: fixed;
+            left: 40px;
+            top: 45px;
         }
     </style>
 </head>
+
 <body>
     <div class="parent">
-        <div>I m a div</div>
-    <h1 class="background"> Heading one </h1>
-    <h2 class="background"> Heading two</h2>
-    <h3 class="background"> Heading three</h3>
-        <div>I am a div too</div>
+        <div class="child">
+            <div class="child2">child</div>
+        </div> 
     </div>
-    
-  
-
 </body>
+
 </html>
