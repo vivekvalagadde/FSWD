@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div.parent {
+    height: 500px;
+    background-color: black;
+}
+div.child {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    animation: 1s move forwards;
+    animation: forwards;
+
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(200px);
+    }
+    50% {
+        transform: translate(200px,50px);
+        background-color: aqua;
+    }
+    100% {
+        transform: translateY(200px);
+    }
+}
