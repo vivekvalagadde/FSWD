@@ -2,18 +2,34 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: unset;
 }
 
 header{
     background-image: url('./Images/day.jpeg');
     height: 300px;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }
 
-.social {
+img.social {
+    width: 30px;
+    margin: 0px 10px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    color: rgb(90, 7, 168);
+    display: flex;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    margin: 5px;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
 }
