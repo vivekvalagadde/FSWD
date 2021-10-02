@@ -7,9 +7,38 @@
     <title>Todo List</title>
     <link rel="stylesheet" href="assets/styles.css">
     
+
+
 </head>
+
 <body>
     <header></header>
+    <section class="list-container">
+        <div class="container">
+            <h2>
+                Todo List <input id="switch" type="checkbox" />
+                <label class="switch-label" for="switch">Toggle</label>
+            </h2>
+            <div class="list">
+                <div class="list-item">
+                    <input placeholder="Add a task to the list" type="text"/>
+                    <i class="fas fa-plus"></i>
+                </div>
+                <ol class="todo-list">
+                    <div class="taskbar list-item">
+                        <div>5 Items left</div>
+                        <div style="display: flex;">
+                        <div class="active" id="all">All</div>
+                        <div id="pending">Pending</div>
+                        <div id="complete">Completed</div>
+                        </div>
+                        <div class="clear">Clear</div>
+                    </div>
+                    <div class="items"></div>
+                </ol>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div>
