@@ -1,7 +1,11 @@
-const {add, substract, multiply, message} = require('./index')
+const path = require('path')
 
-add()
-substract()
-multiply()
+console.log(path.dirname("./GIT/temp/utils.js"))
 
-console.log(message)
+console.log(path.resolve("./app.js"))
+
+console.log(path.relative('./', "./app.js"))
+
+console.log(__dirname)
+
+console.log(path.join(__dirname, 'app.js'))
